@@ -1,0 +1,88 @@
+:root {
+    /* branco */
+    --color-light-50: #f8fafc;
+
+    /* roxo */
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+
+    /* degradê */
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#conteudo {
+    height: 100vh;
+    width: 100vw;
+    background: var(--color-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formLogin {
+    background-color: var(--color-light-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.875rem 2.5rem;
+    border-radius: 5px;
+    gap: 2rem;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+label {
+    color: #afafaf;
+}
+
+.inputBar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.2rem;
+    cursor: cell;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--color-purple-100);
+    width: 17rem;
+    padding: .3rem;
+}
+
+i {
+    color: rgb(20, 20, 20);
+}
+
+button {
+    background: var(--color-gradient);
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+    width: 9rem;
+    height: 2.4rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-light-50);
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
