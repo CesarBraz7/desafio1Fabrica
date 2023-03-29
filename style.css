@@ -1,14 +1,12 @@
 :root {
     /* branco */
-    --color-light-50: #f8fafc;
+    --color-light: #f8fafc;
 
-    /* roxo */
-    --color-purple-50: #7c3aed;
-    --color-purple-100: #a855f7;
-    --color-purple-200: #bf46ef;
+    /* verde */
+    --color-green: rgba(21,135,0,1);
 
     /* degradê */
-    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+    --color-gradient: linear-gradient(90deg, rgba(22,112,0,1) 0%, rgba(21,135,0,1) 35%, rgba(4,157,0,1) 100%);
 }
 
 * {
@@ -28,7 +26,7 @@
 }
 
 #formLogin {
-    background-color: var(--color-light-50);
+    background-color: var(--color-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +59,7 @@ label {
 input {
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid var(--color-purple-100);
+    border-bottom: 1px solid var(--color-green);
     width: 17rem;
     padding: .3rem;
 }
@@ -79,7 +77,7 @@ button {
     height: 2.4rem;
     cursor: pointer;
     font-weight: bold;
-    color: var(--color-light-50);
+    color: var(--color-light);
 }
 
 button:hover {
